@@ -15,7 +15,7 @@ about: Something isn't working correctly.
 
 
 
-**Which versions of AOS, and which browser and OS are affected by this issue?**
+**Which versions of route-config, and which browser and OS are affected by this issue?**
 
 
 
