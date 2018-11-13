@@ -42,4 +42,27 @@ describe('namespace', () => {
     expect(namespace.key).toBe('comments')
     expect(namespace.path).toBe('/comments')
   })
+
+  it('should return namespace map', () => {
+    const map = new RouteConfig()
+    let namespace = map.namespace({ key: 'comments', path: '/comments' })
+    namespace.route({ key: 'show', path: '/:commentId' })
+    expect(namespace.getMap()).toEqual({
+      config: {},
+      fullPath: '/comments',
+      id: 'comments',
+      key: 'comments',
+      namespaces: {},
+      path: '/comments',
+      routes: {
+        show: {
+          config: {},
+          fullPath: '/comments/:commentId',
+          id: 'comments.show',
+          key: 'show',
+          path: '/:commentId'
+        }
+      }
+    })
+  })
 })

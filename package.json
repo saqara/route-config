@@ -1,7 +1,9 @@
 {
   "name": "route-config",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "A static route configuration",
+  "repository": "github:go-aos/route-config",
+  "bugs": "https://github.com/go-aos/route-config/issues",
   "main": "lib/route-config.js",
   "module": "es/route-config.js",
   "files": [
@@ -26,18 +28,11 @@
     "route",
     "config"
   ],
-  "repository": {
-    "type": "git",
-    "url": "github.com/go-aos/route-config"
-  },
   "authors": [
     "Stephane Barale <stephane.barale@go-aos.io> (https://github.com/C0r3y8)",
     "AOS"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/go-aos/route-config/issues"
-  },
   "dependencies": {
     "normalizr": "^3.2.4",
     "path-to-regexp": "^2.1.0"
